@@ -1,0 +1,12 @@
+<div class="d-flex p-4 pt-5 pb-5 flex-column   bg-light rounded  align-items-center container container-card">
+    <img class="mb-3 rounded-3 " src="{{imgUrl}}" alt="{{title}}" width="150" height="150" />
+    <div>
+        <h4 class="text-center">{{title}}</h4>
+        <p class="text-sm-justify">{{description}}</p>
+        <h5 class="text-center">{{price | NumberToReal}}</h5>
+    </div>
+    <div class="btn-group mt-4">
+        <button class="btn btn-primary" (click)="addToCart()">Add to cart</button>
+        <button class="btn btn-secondary" (click)="addToWishlist()">Add to wishlist</button>
+    </div>
+</div>
